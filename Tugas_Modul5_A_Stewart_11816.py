@@ -57,8 +57,8 @@ if os.path.exists(model_path):
                     # Ubah menjadi grayscale
                     # Tampilkan hasil prediksi untuk setiap gambar di sidebar
                     st.sidebar.write(f"#### {file.name}")
-                    st.sidebar.write(f"Kelas Prediksi: * {class_names[predicted_class]} * ")
-                    st.sidebar.write(f"Confidence: * {confidence :. 2f}% * ")
+                    st.sidebar.write(f"Kelas Prediksi: * {class_names[predicted_class]} *")
+                    st.sidebar.write(f"Confidence: * {confidence :.2f}% *")
 
     except Exception as e:
         st.error(f"Error: {str(e)}")
